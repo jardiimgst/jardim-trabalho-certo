@@ -31,7 +31,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#FFFAFA', dark: '#4169E1' }}
       headerImage={
         <Image
-          source={require('@/assets/images/perfil.png')}
+          source={require('@/assets/images/capa.jpeg')}
           style={styles.profileImage}
           
         />
@@ -52,7 +52,7 @@ export default function HomeScreen() {
         <View style={{justifyContent: 'center', alignItems: 'center'}}>
           <View>
           <Image
-          source={require('@/assets/images/capa-praia.png')} 
+          source={require('@/assets/images/perfil.png')} 
           style={{width: 100, height: 100, borderRadius: 100 }}
         />
           </View>
@@ -122,15 +122,15 @@ const styles = StyleSheet.create({
   },
   perfil: {
     borderRadius: 10,
-    width: 22,
-    height: 22,
+    width: 32,
+    height: 32,
     alignItems: 'center',
     justifyContent: 'center',
 
   },
   profileImage: {
     width: 395,
-    height: 250,
+    height: 300,
     resizeMode: "cover",
     position: 'absolute'
     
@@ -140,7 +140,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
-    position: 'absolute'
+    position: 'absolute',
+    backgroundColor: '#E9FAFF'
   },
   title: {
     fontSize: 24,
@@ -162,13 +163,14 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: '#0097B2',
     paddingVertical: 20,
     paddingHorizontal: 70,
     borderRadius: 8,
+    margin: 5
   },
   buttonText: {
-    color: '#000',
+    color: 'white',
     fontWeight: 'bold',
     textAlign: 'center'
   },

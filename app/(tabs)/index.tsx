@@ -10,11 +10,13 @@ import { ThemedView } from '@/components/ThemedView';
 
 export default function TabTwoScreen() {
   return (
+    
     <ParallaxScrollView
+    
       headerBackgroundColor={{ light: '#FFFAFA', dark: '#4169E1' }}
       headerImage={
 
-        <Image source={require('@/assets/images/capa-praia.png')} //fundo 2
+        <Image source={require('@/assets/images/capa.jpeg')} //fundo 2
         style={styles.headerImage}
         />
 
@@ -22,20 +24,17 @@ export default function TabTwoScreen() {
       
       >
 
-          <Image source={require('@/assets/images/sitegrazi.png')}
-          style={styles.fundo}
-          />
-
         
-
+        
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Bem Vindo ! 👋🏽</ThemedText>
+        <ThemedText type="title" >Bem Vindo ! 👋🏽</ThemedText>
         
         </ThemedView>
       
       <View style={{alignItems: "center", justifyContent: "center"}}>
         <Text style={styles.txt}> - Venha conferir o meu trabalho como desenvolvedor web.</Text>
       </View>
+      
 
         {Platform.select({
           ios: (
@@ -46,6 +45,7 @@ export default function TabTwoScreen() {
         })}
       
     </ParallaxScrollView>
+    
   );
 }
 
@@ -69,6 +69,6 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   fundo: {
-    
+    backgroundColor: '#E9FAFF'
   },
 });
